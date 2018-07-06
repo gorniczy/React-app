@@ -1,8 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Dialogue from './App';
+import {Button} from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class MyApp extends React.Component {
+
+  render() {
+    return (<div>
+    <Dialogue name="- Yeah!" />
+    <Button />
+    </div>);
+  }
+}
+
+ReactDOM.render(<MyApp />, document.getElementById('root'));
 registerServiceWorker();
