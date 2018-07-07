@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 export default class Dialogue extends React.Component {
@@ -9,7 +8,7 @@ export default class Dialogue extends React.Component {
         <h2>- Wanna dance?
         </h2>
         <h2>
-          {this.props.name}
+          {this.props.answer}
         </h2>
       </div>
     );

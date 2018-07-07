@@ -9,7 +9,7 @@ class MyApp extends React.Component {
 
   render() {
     return (<div>
-    <Dialogue name="- Yeah!" />
+    <Dialogue answer="- Yeah!" />
     <Button />
     </div>);
   }
