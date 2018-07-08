@@ -16,10 +16,21 @@ export default class Dialogue extends React.Component {
 }
 
 export class Button extends React.Component {
-  party() {
-    alert('shake it!');
+  constructor(props) {
+    super(props);
+    this.state = { clicked: false };
+    this.changeState = this.changeState.bind(this);
   }
+
+  changeState() {
+    this.setState({ clicked: true });
+  }
+
   render() {
-    return <button className="btn" onClick={this.party}>Are you ready?</button>
+    if (this.state.clicked) {
+      return <h2 className="dialogue">- Wiggle wiggle wiggle!</h2>;
+    }
+
+    return <button className="btn" onClick={this.changeState}>Are you ready?</button>;
   }
 }
