@@ -28,9 +28,14 @@ export class Button extends React.Component {
 
   render() {
     if (this.state.clicked) {
-      return <h2 className="dialogue">- Wiggle wiggle wiggle!</h2>;
+      return (
+        <div>
+          <h2 className="dialogue">- Wiggle wiggle wiggle!</h2>
+          <img className="snoopy" src="https://techcrunch.com/wp-content/uploads/2016/01/180424-snoop-dogg-champagne-cheers-gi-bixe.gif?w=730&crop=1" alt="Snoop Dog" />
+        </div>
+      );
     }
 
-    return <button className="btn" onClick={this.changeState}>Are you ready?</button>;
+    return <button className="btn" onClick={this.changeState}>Touch me...</button>;
   }
 }
