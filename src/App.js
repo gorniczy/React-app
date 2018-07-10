@@ -26,6 +26,10 @@ export class Button extends React.Component {
     this.setState({ clicked: true });
   }
 
+  componentWillMount() {
+    alert('Behold the new React Dating App');
+  }
+
   render() {
     if (this.state.clicked) {
       return (
@@ -38,4 +42,5 @@ export class Button extends React.Component {
 
     return <button className="btn" onClick={this.changeState}>I dare you!</button>;
   }
+
 }
