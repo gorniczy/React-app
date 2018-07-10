@@ -36,6 +36,6 @@ export class Button extends React.Component {
       );
     }
 
-    return <button className="btn" onClick={this.changeState}>Touch me...</button>;
+    return <button className="btn" onClick={this.changeState}>I dare you!</button>;
   }
 }
