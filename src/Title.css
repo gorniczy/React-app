@@ -1,0 +1,45 @@
+.title {
+  position: absolute;
+  width: 90vw;
+  height: 15rem;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.app-name {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 -40% 0 0;
+  transform: translateX(-50%);
+  font-family: "Open Sans";
+  font-size: 72px;
+  font-weight: 100;
+  color: #FFFFFF;
+}
+
+.enter-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFFFFF;
+  border: none;
+  color: #0A0A0A;
+  padding: 1.1rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 12px 0 rgba(0,0,0,0.50);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 200;
+}
+
+.enter-btn:active {
+  bottom: -0.2%;
+  box-shadow: 0 0.5px 6px 0 rgba(0,0,0,0.50);
+}

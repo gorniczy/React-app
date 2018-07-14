@@ -1,21 +1,7 @@
 import React from 'react';
-import './App.css';
+import './Button.css';
 
-export default class Dialogue extends React.Component {
-  render() {
-    return (
-      <div className="dialogue">
-        <h2>- Wanna dance?
-        </h2>
-        <h2>
-          {this.props.answer}
-        </h2>
-      </div>
-    );
-  }
-}
-
-export class Button extends React.Component {
+export class ButtonYes extends React.Component {
   constructor(props) {
     super(props);
     this.state = { clicked: false };
@@ -24,10 +10,6 @@ export class Button extends React.Component {
 
   changeState() {
     this.setState({ clicked: true });
-  }
-
-  componentWillMount() {
-    alert('Behold the new React Dating App');
   }
 
   render() {
@@ -40,7 +22,7 @@ export class Button extends React.Component {
       );
     }
 
-    return <button className="btn" onClick={this.changeState}>I dare you!</button>;
+    return <button className="btn" onClick={this.changeState}>Go for it!</button>;
   }
 
 }
