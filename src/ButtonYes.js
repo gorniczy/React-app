@@ -10,19 +10,23 @@ export class ButtonYes extends React.Component {
 
   changeState() {
     this.setState({ clicked: true });
+    this.props.toggleMe(true);
   }
 
   render() {
     if (this.state.clicked) {
       return (
         <div>
-          <h2 className="dialogue">- Wiggle wiggle wiggle!</h2>
+          <h2 className="dialogue">Wiggle wiggle wiggle!</h2>
           <img className="snoopy" src="https://techcrunch.com/wp-content/uploads/2016/01/180424-snoop-dogg-champagne-cheers-gi-bixe.gif?w=730&crop=1" alt="Snoop Dog dancing" />
         </div>
       );
     }
+    else if(this.props.visibility) {
+      return (null);
+    }
 
-    return <button className="btn" onClick={this.changeState}>Go for it!</button>;
+    return <button className="btn" style={{backgroundColor: 'green'}} onClick={this.changeState}>Go for it!</button>;
   }
 
 }
