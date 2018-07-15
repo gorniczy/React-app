@@ -9,20 +9,25 @@ export class ButtonNo extends React.Component {
   }
 
   changeState() {
-    this.setState({ clicked: true, display: false });
+    this.setState({ clicked: true });
+    this.props.toggleMe(true);
   }
 
   render() {
     if (this.state.clicked) {
       return (
         <div>
-          <h2 className="dialogue">- We cool.. for now.</h2>
-          <img className="snoopy" src="https://media.giphy.com/media/Bcp7itvVXnTNK/giphy.gif" alt="Snoop Dog disapproves" />
+          <h2 className="dialogue">S(he) hates my hat.</h2>
+          <img className="snoopy" src="https://media.giphy.com/media/4ZaVKo7F0OI3tZQA5O/giphy.gif" width="640px" alt="Snoop Dog disapproves" />
         </div>
       );
     }
 
-      return <button className="btn" style={{backgroundColor: 'green'}} onClick={this.changeState}>No way!</button>;
+    else if(this.props.visibility) {
+      return (null);
+    }
+
+    return <button className="btn" onClick={this.changeState}>No way!</button>;
 
     }
 }
