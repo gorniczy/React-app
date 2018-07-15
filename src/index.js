@@ -11,8 +11,9 @@ export class MyApp extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { title: true };
+    this.state = { title: true, hidden: false};
     this.handleChange = this.handleChange.bind(this);
+    this.toggle = this.toggle.bind(this);
   }
 
   handleChange() {
@@ -20,10 +21,13 @@ export class MyApp extends React.Component {
     document.body.style.background = '#FFFFFF';
   }
 
+  toggle(newBool) {
+    this.setState({ hidden: newBool });
+  }
+
   componentWillMount() {
       document.body.style.background = '#F49797';
   }
-
 
   render() {
     if(this.state.title) {
@@ -33,9 +37,8 @@ export class MyApp extends React.Component {
 
       return (<div>
               <Dialogue />
-              <ButtonYes />
-              <br />
-              <ButtonNo />
+              <ButtonYes toggleMe={this.toggle} visibility={this.state.hidden} />
+              <ButtonNo toggleMe={this.toggle} visibility={this.state.hidden} />
               </div>);
           }
     }
