@@ -7,3 +7,12 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 90vw;
+  height: 90vh;
+  transform: translateX(-50%) translateY(-50%);
+}

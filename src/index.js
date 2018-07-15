@@ -35,7 +35,7 @@ export class MyApp extends React.Component {
     }
     else {
 
-      return (<div>
+      return (<div className="container">
               <Dialogue />
               <ButtonYes toggleMe={this.toggle} visibility={this.state.hidden} />
               <ButtonNo toggleMe={this.toggle} visibility={this.state.hidden} />
