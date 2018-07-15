@@ -1,5 +1,4 @@
 import React from 'react';
-import { Dialogue } from './Dialogue';
 import './Title.css';
 
 export class Title extends React.Component {

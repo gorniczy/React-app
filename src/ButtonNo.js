@@ -9,7 +9,7 @@ export class ButtonNo extends React.Component {
   }
 
   changeState() {
-    this.setState({ clicked: true });
+    this.setState({ clicked: true, display: false });
   }
 
   render() {
@@ -22,7 +22,7 @@ export class ButtonNo extends React.Component {
       );
     }
 
-    return <button className="btn" style={{backgroundColor: 'green'}} onClick={this.changeState}>No way!</button>;
-  }
+      return <button className="btn" style={{backgroundColor: 'green'}} onClick={this.changeState}>No way!</button>;
 
+    }
 }
