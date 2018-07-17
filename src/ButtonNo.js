@@ -18,7 +18,7 @@ export class ButtonNo extends React.Component {
       return (
         <div>
           <h2 className="dialogue">S(he) hates my hat.</h2>
-          <img className="snoopy" src="https://media.giphy.com/media/4ZaVKo7F0OI3tZQA5O/giphy.gif" width="640px" alt="Snoop Dog disapproves" />
+          <img className="snoopy" src="https://media.giphy.com/media/4ZaVKo7F0OI3tZQA5O/giphy.gif" width="640px" alt="Snoop Dog in a hat" />
         </div>
       );
     }
