@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Dialogue } from './Dialogue';
+import { Text } from './Text';
 import { ButtonYes } from './ButtonYes';
 import { ButtonNo } from './ButtonNo';
 import { Title } from './Title';
@@ -11,7 +11,10 @@ export class MyApp extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { title: true, hidden: false};
+    this.state = {
+      title: true,
+      hidden: false
+    };
     this.handleChange = this.handleChange.bind(this);
     this.toggle = this.toggle.bind(this);
   }
@@ -36,7 +39,7 @@ export class MyApp extends React.Component {
     else {
 
       return (<div className="container">
-                <Dialogue />
+                <Text />
                 <ButtonYes toggleMe={this.toggle} visibility={this.state.hidden} />
                 <ButtonNo toggleMe={this.toggle} visibility={this.state.hidden} />
               </div>);

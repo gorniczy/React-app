@@ -1,10 +1,10 @@
 import React from 'react';
-import './Dialogue.css';
+import './Text.css';
 
-export class Dialogue extends React.Component {
+export class Text extends React.Component {
   render() {
     return (
-      <div className="dialogue">
+      <div className="text">
         <h2>Wanna dance?
         </h2>
       </div>

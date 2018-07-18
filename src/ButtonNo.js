@@ -17,7 +17,7 @@ export class ButtonNo extends React.Component {
     if (this.state.clicked) {
       return (
         <div>
-          <h2 className="dialogue">S(he) hates my hat.</h2>
+          <h2 className="text">S(he) hates my hat.</h2>
           <img className="snoopy" src="https://media.giphy.com/media/4ZaVKo7F0OI3tZQA5O/giphy.gif" width="640px" alt="Snoop Dog in a hat" />
         </div>
       );
