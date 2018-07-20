@@ -4,8 +4,8 @@ import './Text.css';
 export class Text extends React.Component {
   render() {
     return (
-      <div className="text">
-        <h2>Wanna dance?
+      <div>
+        <h2 className="text">Wanna dance?
         </h2>
       </div>
     );

@@ -13,10 +13,18 @@
   font-weight: 200;
   color: #FFFFFF;
   margin-bottom: 1rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn:active {
-  position: relative;
   top: 0.1rem;
   box-shadow: 0 0px 0px 0 rgba(0,0,0,0.50);
+}
+
+.snoopy {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
