@@ -7,7 +7,7 @@ export class Title extends React.Component {
     return (
       <div className="title">
         <h1 className="app-name">Snoopy Dating App</h1>
-        <button className="enter-btn" onClick={this.props.onClick}>woof - woof
+        <button className="enter-btn" onClick={this.props.onClick}>woof
         </button>
       </div>
     );
