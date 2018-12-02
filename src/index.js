@@ -19,6 +19,10 @@ export class MyApp extends React.Component {
     this.toggle = this.toggle.bind(this);
   }
 
+  componentWillMount() {
+    document.body.style.background = '#F49797';
+  }
+
   handleChange() {
     this.setState({ title: false });
     document.body.style.background = '#FFFFFF';
@@ -26,10 +30,6 @@ export class MyApp extends React.Component {
 
   toggle(newBool) {
     this.setState({ hidden: newBool });
-  }
-
-  componentWillMount() {
-      document.body.style.background = '#F49797';
   }
 
   render() {
